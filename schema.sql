@@ -81,6 +81,7 @@ DECLARE recipe_south_carolina_style_mustard_barbecue_sauce INTEGER;
 DECLARE recipe_smothered_country_style_ribs INTEGER;
 DECLARE recipe_ropa_vieja INTEGER;
 DECLARE recipe_frijoles_de_la_olla INTEGER;
+DECLARE recipe_tostones INTEGER;
 
 DECLARE ingredient_group_tako_poke_tamari_or_soy_sauce INTEGER;
 DECLARE ingredient_group_tako_poke_green_onion_or_sweet_onion INTEGER;
@@ -103,6 +104,7 @@ DECLARE ingredient_black_pepper INTEGER;
 DECLARE ingredient_black_peppercorn INTEGER;
 DECLARE ingredient_bottom_round INTEGER;
 DECLARE ingredient_butter INTEGER;
+DECLARE ingredient_coarse_salt INTEGER;
 DECLARE ingredient_cider_vinegar INTEGER;
 DECLARE ingredient_cilantro INTEGER;
 DECLARE ingredient_cinnamon_stick INTEGER;
@@ -127,6 +129,7 @@ DECLARE ingredient_garlic_powder INTEGER;
 DECLARE ingredient_gochujang INTEGER;
 DECLARE ingredient_green_olive INTEGER;
 DECLARE ingredient_green_onion INTEGER;
+DECLARE ingredient_green_plantain INTEGER;
 DECLARE ingredient_ketchup INTEGER;
 DECLARE ingredient_kimchi INTEGER;
 DECLARE ingredient_lean_brisket INTEGER;
@@ -186,7 +189,8 @@ BEGIN
         ('South Carolina-Style Mustard Barbecue Sauce', source_joy_of_cooking, 583, 3, 3, 'cup'),
         ('Smothered Country-Style Ribs', source_joy_of_cooking, 496, 6, 8, NULL),
         ('Ropa Vieja (Cuban Braised and Shredded Beef)', source_joy_of_cooking, 471, 6, 8, NULL),
-        ('Frijoles de la Olla', source_joy_of_cooking, 213, 8, 8, NULL)
+        ('Frijoles de la Olla', source_joy_of_cooking, 213, 8, 8, NULL),
+        ('Tostones', source_joy_of_cooking, 263, 6, 6, NULL)
     ;
 
     SELECT id INTO recipe_cooked_octopus FROM meal_planner.recipe WHERE name = 'Cooked Octopus';
@@ -196,13 +200,15 @@ BEGIN
     SELECT id INTO recipe_smothered_country_style_ribs FROM meal_planner.recipe WHERE name = 'Smothered Country-Style Ribs';
     SELECT id INTO recipe_ropa_vieja FROM meal_planner.recipe WHERE name = 'Ropa Vieja (Cuban Braised and Shredded Beef)';
     SELECT id INTO recipe_frijoles_de_la_olla FROM meal_planner.recipe WHERE name = 'Frijoles de la Olla';
+    SELECT id INTO recipe_tostones FROM meal_planner.recipe WHERE name = 'Tostones';
 
     -- Meal Recipes
     INSERT INTO meal_planner.meal_recipe (meal_id, recipe_id) VALUES
         (meal_dinner_main, recipe_tako_poke),
         (meal_dinner_main, recipe_smothered_country_style_ribs),
         (meal_dinner_main, recipe_ropa_vieja),
-        (meal_dinner_side, recipe_frijoles_de_la_olla)
+        (meal_dinner_side, recipe_frijoles_de_la_olla),
+        (meal_dinner_side, recipe_tostones)
     ;
 
     -- Recipe Ingredient Groups
@@ -248,6 +254,7 @@ BEGIN
         ('cider vinegar'),
         ('cilantro'),
         ('cinnamon stick'),
+        ('coarse salt'),
         ('corn tortilla'),
         ('cotija cheese'),
         ('country-style ribs'),
@@ -269,6 +276,7 @@ BEGIN
         ('gochujang'),
         ('green olive'),
         ('green onion'),
+        ('green plantain'),
         ('ketchup'),
         ('kimchi'),
         ('lean brisket'),
@@ -309,6 +317,7 @@ BEGIN
     SELECT id INTO ingredient_cider_vinegar FROM meal_planner.ingredient WHERE name = 'cider vinegar';
     SELECT id INTO ingredient_cilantro FROM meal_planner.ingredient WHERE name = 'cilantro';
     SELECT id INTO ingredient_cinnamon_stick FROM meal_planner.ingredient WHERE name = 'cinnamon stick';
+    SELECT id INTO ingredient_coarse_salt FROM meal_planner.ingredient WHERE name = 'coarse salt';
     SELECT id INTO ingredient_corn_tortilla FROM meal_planner.ingredient WHERE name = 'corn tortilla';
     SELECT id INTO ingredient_cotija_cheese FROM meal_planner.ingredient WHERE name = 'cotija cheese';
     SELECT id INTO ingredient_country_style_ribs FROM meal_planner.ingredient WHERE name = 'country-style ribs';
@@ -330,6 +339,7 @@ BEGIN
     SELECT id INTO ingredient_gochujang FROM meal_planner.ingredient WHERE name = 'gochujang';
     SELECT id INTO ingredient_green_olive FROM meal_planner.ingredient WHERE name = 'green olive';
     SELECT id INTO ingredient_green_onion FROM meal_planner.ingredient WHERE name = 'green onion';
+    SELECT id INTO ingredient_green_plantain FROM meal_planner.ingredient WHERE name = 'green plantain';
     SELECT id INTO ingredient_ketchup FROM meal_planner.ingredient WHERE name = 'ketchup';
     SELECT id INTO ingredient_kimchi FROM meal_planner.ingredient WHERE name = 'kimchi';
     SELECT id INTO ingredient_lean_brisket FROM meal_planner.ingredient WHERE name = 'lean brisket';
@@ -337,7 +347,6 @@ BEGIN
     SELECT id INTO ingredient_octopus FROM meal_planner.ingredient WHERE name = 'octopus';
     SELECT id INTO ingredient_onion FROM meal_planner.ingredient WHERE name = 'onion';
     SELECT id INTO ingredient_onion_powder FROM meal_planner.ingredient WHERE name = 'onion powder';
-    SELECT id INTO ingredient_dried_oregano FROM meal_planner.ingredient WHERE name = 'dried oregano';
     SELECT id INTO ingredient_parsley FROM meal_planner.ingredient WHERE name = 'parsley';
     SELECT id INTO ingredient_red_wine FROM meal_planner.ingredient WHERE name = 'red wine';
     SELECT id INTO ingredient_rendered_beef_fat FROM meal_planner.ingredient WHERE name = 'rendered beef fat';
@@ -432,6 +441,9 @@ BEGIN
         (NULL, ingredient_group_frijolles_de_la_olla_cheese, ingredient_cotija_cheese, NULL, NULL, NULL, NULL, NULL, FALSE),
         (NULL, ingredient_group_frijolles_de_la_olla_cheese, ingredient_shredded_cheddar_cheese, NULL, NULL, NULL, NULL, NULL, FALSE),
         (NULL, ingredient_group_frijolles_de_la_olla_cheese, ingredient_shredded_monterey_jack_cheese, NULL, NULL, NULL, NULL, NULL, FALSE),
-        (NULL, ingredient_group_frijolles_de_la_olla_cheese, ingredient_shredded_oaxaca_cheese, NULL, NULL, NULL, NULL, NULL, FALSE)
+        (NULL, ingredient_group_frijolles_de_la_olla_cheese, ingredient_shredded_oaxaca_cheese, NULL, NULL, NULL, NULL, NULL, FALSE),
+        (recipe_tostones, NULL, ingredient_green_plantain, NULL, 1.5, 'lb', NULL, '(about 6 medium)', FALSE),
+        (recipe_tostones, NULL, ingredient_vegetable_oil, NULL, 2, 'in', NULL, NULL, FALSE),
+        (recipe_tostones, NULL, ingredient_coarse_salt, NULL, NULL, NULL, NULL, NULL, FALSE)
     ;
 END $$;
