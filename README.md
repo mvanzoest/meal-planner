@@ -14,7 +14,7 @@
 1. Download DBeaver.
 2. Create a new PostgreSQL connection.
 
-### Parsing Text from Images
+### Parsing Text from Images with Tesseract and Pillow
 
 Tesseract download
 - Windows download: https://github.com/UB-Mannheim/tesseract/wiki
@@ -28,3 +28,12 @@ Installing:
 - `pip install pillow`
 
 If in main.py you see a warning `Import "pytesseract" could not be resolved`, Ctrl+Shift+P and Python: Select Interpreter to the global installation.
+
+### Formatting Parsed Text with OpenAI
+
+Install: `pip install openai`
+
+API reference: https://platform.openai.com/docs/api-reference/introduction
+
+Set your organization ID as an environment variable `OPENAI_ORGANIZATION_ID`
+Set your API key as an environment variable `OPENAI_API_KEY`
