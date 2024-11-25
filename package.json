@@ -1,0 +1,20 @@
+{
+  "name": "meal-planner",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "1. Download and install PostgreSQL: https://www.postgresql.org/download/\r 2. To use `psql`, add the PostgreSQL installation directory (e.g. `C:\\Program Files\\PostgreSQL\\16\\bin`) to your PATH (Windows: Windows+Start \"environment variables\" > Environment Variables > User variable = Path > Edit... > New > OK > OK > OK)\r 3. Restart your terminal.\r 4. Verify Postgres is installed with `psql -U postgres` and the password you used in the installation wizard (`\\q` to quit).",
+  "main": "meal-selector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvanzoest/meal-planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvanzoest/meal-planner/issues"
+  },
+  "homepage": "https://github.com/mvanzoest/meal-planner#readme"
+}

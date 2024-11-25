@@ -1,0 +1,330 @@
+Drinks (Non-Alcoholic)
+Coffee,4,6
+Tea,8,8
+Chocolate and Cocoa,9,10
+Juices and Fruit,11,12
+Smoothies and Ice Cream,12,13
+Thirst Quenchers,13,15
+Fruit Punches,15,16
+Virgin Cocktails,28,28
+
+Drinks (Alcoholic)
+Gin,19,21
+Vodka and Aquavit,21,22
+"Whiskey, Whisky, and Scotch",22,24
+Rum,24,26
+Tequila and Mezcal,26,27
+Brandy,27,28
+Cordials and Liqueurs,28,28
+Punches,29,32
+White Wines,35,35
+Red Wines,36,37
+Rosés and Blush Wines,37,37
+Sparkling Wines,37,38
+Dessert Wines,38,38
+Fortified Wine,38,39
+Sake and Other Fermented Rice Beverages,39,39
+Hard Cider,40,40
+Beer,40,41
+Wine and Beer Cocktails,42,43
+
+Side Dishes
+Party Platters,45,46
+Party Snacks,46,50
+Dips,50,54
+Cheesy Appetizers,55,57
+Fruit Appetizers,58,58
+Vegetable Appetizers,58,60
+Meat-Based Appetizers,60,64
+Seafood Appetizers,65,66
+Canapés and Tea Sandwiches,67,68
+Pastry Party Foods,68,71
+Clear Soups,83,85
+Vegetable Soups,85,88
+Hearty Bean and Legume Soups,89,90
+Bread Soups,91,92
+Poultry Soups,92,95
+"Beef, Pork, and Lamb Soups",95,99
+Fish and Shellfish Soups,99,104
+Cream Soups and Purees,104,108
+Quick and Condensed Soups,109,110
+Green Salads,116,118
+Warm or Wilted Salads,118,118
+Coleslaw,119,120
+Bound Salads,123,124
+Vegetable Salads,125,129
+Bean Salads,129,130
+Grain and Rice Salads,130,132
+Pasta Salads,132,132
+Aspics,134,134
+Spreads and Dressings for Sandwiches,136,136
+Soft-Boiled and Hard-Boiled Eggs,150,152
+Coddled and Poached Eggs,153,154
+Baked Eggs,154,155
+Fried Eggs,155,156
+Scrambled Eggs,156,157
+Soufflés,161,162
+Quiche,162,163
+Fruit Salads,167,168
+Coconut,185,185
+Dates,185,185
+Melons,189,189
+Pineapples,192,192
+Plums,192,192
+Prickly Pears,193,193
+Cooked Vegetables,202,205
+Artichokes,206,207
+Asparagus,208,209
+Fresh Snap or Green Beans,210,211
+Fresh Shell Beans,211,212
+Dried Beans and Legumes,213,217
+Lentils and Split Peas,217,218
+Beets,219,220
+Broccoli,220,221
+Brussels Sprouts,222,222
+Burdock,223,223
+Cabbage,224,226
+Cactus Pads,227,227
+Cardoons,228,228
+Carrots,228,229
+Cauliflower,229,231
+Celery,231,231
+Celery Root,232,232
+Chestnuts,232,233
+Chicories and Endives,233,234
+Corn,235,236
+Eggplant,237,239
+Fennel,240,240
+Greens,243,245
+Leeks,247,248
+Mushrooms,251,252
+Okra,253,253
+Onions and Shallots,255,257
+Parsnips and Parsley Root,258,258
+Peas,259,259
+Peppers,262,263
+Plantains,263,263
+Potatoes,265,271
+Radishes,272,272
+Salsify amd Scorzonera,272,272
+Squashes,274,276
+Squash Blossoms,277,277
+Sunchokes,277,277
+Sweet Potatoes and Yams,278,279
+Taro,280,280
+Tomatoes,281,283
+Turnips,283,283
+Yuca,284,284
+"Tofu, Tempeh, and Other Plant-Based Proteins",286,289
+Dumplings,305,308
+Filled Dumplings,313,316
+Barley,320,320
+Buckwheat,321,321
+"Cornmeal, Hominy, and Grits",322,325
+Millet,326,326
+Oats,327,328
+Quinoa and Canihua,328,328
+Rice,329,335
+Risotto,336,336
+Rye,337,337
+Wheat,338,339
+Wild Rice,340,340
+Pâtes and Terrines,513,514
+Bread Stuffings,532,533
+Bread Crumb Stuffings,533,535
+Grain Stuffings and Dressings,535,537
+Yeast Rolls,617,622
+Corn Breads,630,631
+Spoon Bread,631,631
+Biscuits and Scones,635,638
+Savory Fritters and Croquettes,654,655
+Puff Pastry,692,697
+
+Main Dishes
+Combination Salads,120,123
+Cold Sandwiches,137,139
+Hot Sandwiches,139,141
+"Griddled, Pressed, and Broiled Sandwiches",141,143
+Hot Dogs,143,144
+Burgers,144,145
+Flatbread Sandwiches,145,145
+"Tacos, Tostadas, and Burritos",146,147
+Omelets,158,160
+Strata,164,165
+Leftover Pasta,293,293
+Pasta,295,300
+Asian Noodles,301,305
+Baked Pasta and Noodle Dishes,309,311
+Stuffed Pasta,311,313
+Mixed Shellfish,347,348
+Oysters,349,350
+Mussels,351,351
+Clams,352,354
+Scallops,355,356
+Abalone,356,356
+Crabs,358,359
+Lobsters,360,362
+Shrimp,363,366
+Crayfish or Crawfish,367,367
+"Octopus, Squid, and Cuttlefish",368,369
+Conch and Whelk,369,369
+Turtles,370,370
+Snails,371,371
+Frog Legs,371,371
+Raw Fish,377,377
+Roasted or Baked Fish,378,380
+"Steamed, Poached, Braised, and Cooked Fish Sous Vide",381,383
+Microwaved Fish,383,383
+Grilled and Broiled Fish,384,387
+"Seared, Sautéed, and Pan-Fried Fish",387,389
+Deep-Fried and Shallow-Fried Fish,390,392
+Smoked and Preserved Fish,393,394
+Roast Chicken,407,410
+Broiled and Grilled Chicken,411,413
+Sautéed and Stir-Fried Chicken,414,416
+Fried Chicken,417,418
+"Poached, Stewed, and Braised Chicken",419,426
+Turkey,428,430
+Ground Poultry,430,430
+Duck and Goose,432,433
+Guinea Fowel,434,434
+Squab,434,435
+Ostrich and Emu,435,435
+Wild Duck and Goose,438,439
+Pheasant,440,440
+Partridge and Grouse,441,442
+Quail,442,442
+Small Game Birds,443,443
+Poultry Offal and Giblets,445,445
+Foie Gras,446,446
+Roast Beef,456,458
+"Grilled, Broiled, and Sautéed Beef",458,463
+"Braised, Stewed, and Barbecued Beef",464,473
+Roasted Veal,474,474
+"Grilled, Broiled, and Sautéed Veal",474,476
+Braised and Stewed Veal,476,476
+Roasted Lamb,478,479
+"Grilled, Broiled, and Sautéed Lamb",480,481
+"Braised, Stewed, and Barbecued Lamb",481,484
+Goat and Kid,485,485
+Roasted and Baked Pork,488,491
+"Grilled, Broiled, and Sautéed Pork",492,494
+"Braised, Stewed, and Barbecued Pork",494,497
+Ham and Ham Hocks,500,501
+Ground Meat,502,504
+Ground Meat Patties,504,505
+Meatloaf and Meatballs,506,508
+Sausage,509,513
+Liver,514,514
+Sweetbreads,515,515
+Kidneys,516,516
+Tongue,517,517
+Heart,517,517
+Tripe,518,518
+Chitterlings and Hog Maws,519,519
+"Skin, Ears, Tails, and Feet",520,520
+Rabbit and Hare,525,526
+Venison,528,529
+Bear,530,530
+"Bison, Yak, and Alpaca",530,530
+Casseroles,537,540
+Pizza,614,616
+Savory Pies and Pastries,701,707
+
+Desserts
+Fruit Soups,108,109
+Dried and Candied Fruits,169,170
+Baked or Roasted Fruit,171,171
+Grilled or Broiled Fruit,171,172
+Apples,174,175
+Apricots,175,175
+Bananas,176,177
+Strawberries,178,178
+Blueberries and Huckleberries,178,178
+"Blackberries, Raspberries, and Other Cane Berries",179,179
+Cherries,181,181
+Oranges,183,184
+Grapefruit,184,184
+Figs,186,186
+Peaches and Nectarines,190,190
+Quinces,194,194
+Rhubarb,195,195
+Yeasted Coffee Cakes,623,625
+Quick Breads and Coffee Cakes,626,629
+Muffins,632,634
+Pancakes and Griddle Cakes,640,642
+Waffles,642,644
+French Toast,644,645
+Crêpes,645,648
+Oven-Baked Pancakes,649,650
+Doughnuts,651,654
+Fruit Fritters,656,656
+Pies,668,674
+Tarts,674,677
+Transparent Pies,677,678
+Custard and Cream Pies,679,680
+"Pumpkin, Squash, and Sweet Potatoe Pies",681,681
+Lemon and Lime Pies,681,682
+Chiffon and Mousse Pies,682,683
+Rustic Fruit Desserts,684,687
+"Fruit Dumplings, Turnovers, and Hand Pies",688,689
+Galettes and Crostatas,689,690
+Cream Puffs and Éclairs,698,699
+Strudel,699,699
+Phyllo,700,701
+Angel Food Cakes,719,719
+Sponge Cakes,720,722
+Chiffon Cakes,722,723
+Butter Cakes,724,733
+Quick and One-Bowl Cakes,734,739
+Fruitcakes,740,740
+Tortes,741,742
+Flourless Chocolate Cakes,743,743
+Filled Cakes,744,745
+Savarins and Babas,746,746
+Roll Cakes,747,748
+Cupcakes and Miniature Cakes,749,750
+Baked Meringue and Dacquoise,751,752
+Cheesecakes,753,754
+Bars and Squares,764,768
+Drop Cookies,768,773
+Thin Cookies,773,775
+"Rolled, Molded, and Shaped Cookies",776,780
+Icebox and Refrigerator Cookies,780,781
+Filled Cookies,781,785
+Curled Cookies,786,788
+Custards,813,816
+Cornstarch Puddings,816,817
+Dessert Soufflés,818,819
+Gelatin Desserts,820,821
+Mousses and Bavarian Creams,822,824
+Charlottes,825,827
+Rice and Tapioca Puddings,828,829
+Bread Pudding,829,830
+Baked Puddings,830,831
+Steamed Puddings,832,833
+Pancake and Waffle Desserts,833,834
+Ice Creams,840,845
+Gelato,845,845
+Frozen Yogurt,846,846
+Sorbet,847,848
+Sherbet,849,849
+Granita,849,851
+Ice Cream Desserts,851,851
+Still-Frozen Desserts,852,853
+Bombes,854,854
+Truffles,859,862
+Fudge,863,864
+Caramel Candies,864,865
+Fondant,866,866
+Nougat,867,868
+Taffy,869,872
+Pralines,873,873
+Almond Paste and Marzipan,873,876
+
+Breads
+Bread,599,604
+Gluten-Free Yeast Breads,605,605
+Starters and Pre-Ferments,606,607
+Sourdough Starters,609,610
+Flatbreads,610,613
