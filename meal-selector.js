@@ -1,10 +1,38 @@
 import fs from 'fs';
+import config from './config.json' assert { type: 'json' };
 
 main().catch(console.error);
 
 async function main() {
+  const settings = parseSettings();
   const categories = await readCategories();
-  console.log(categories);
+  console.log(settings);
+}
+
+async function parseSettings() {
+  const args = process.argv.slice(2);
+  if (args.length === 0) {
+    throw new Error('No arguments provided');
+  }
+  const settings = [];
+  for (let i = 0; i < args.length; i+=2) {
+    if (!args[i].startsWith('-') || args[i].length !== 2) {
+      throw new Error(`Invalid argument: ${args[i]}`);
+    }
+    const category = config.args[args[i][1]];
+    if (!category) {
+      throw new Error(`Invalid argument: ${args[i]}`);
+    }
+    if (!args[i + 1]) {
+      throw new Error(`Missing argument value: ${args[i]}`);
+    }
+    const count = Number.parseInt(args[i + 1]);
+    if (isNaN(count)) {
+      throw new Error(`Invalid argument value: ${args[i + 1]}`);
+    }
+    settings.push({category, count});
+  }
+  return settings;
 }
 
 async function readCategories() {
