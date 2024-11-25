@@ -6,10 +6,31 @@ main().catch(console.error);
 async function main() {
   const settings = parseSettings();
   const categories = await readCategories();
-  console.log(settings);
+  const recipes = selectRecipes(categories, settings);
+  console.log(recipes);
 }
 
-async function parseSettings() {
+function selectRecipes(categories, settings) {
+  const buckets = {};
+  for (const category of categories) {
+    if (!buckets[category.name]) {
+      buckets[category.name] = {};
+    }
+    const bucket = buckets[category.name];
+    for (const section of category.sections) {
+      for (let i = section.start; i <= section.end; i++) {
+        if (!bucket[i]) {
+          bucket[i] = [section.name];
+        } else {
+          bucket[i].push(section.name);
+        }
+      }
+    }
+  }
+  console.log(buckets);
+}
+
+function parseSettings() {
   const args = process.argv.slice(2);
   if (args.length === 0) {
     throw new Error('No arguments provided');
