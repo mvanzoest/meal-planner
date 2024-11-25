@@ -3,14 +3,43 @@ import config from './config.json' assert { type: 'json' };
 
 main().catch(console.error);
 
+/**
+ * Example usage: node meal-selector.js -m 2 -s 2 -d 1
+ * -m 2: Select 2 main courses
+ * -s 2: Select 2 side dishes
+ * -d 1: Select 1 dessert
+ */
 async function main() {
   const settings = parseSettings();
   const categories = await readCategories();
-  const recipes = selectRecipes(categories, settings);
-  console.log(recipes);
+  const selections = selectPages(categories, settings);
+  console.log(selections);
 }
 
-function selectRecipes(categories, settings) {
+function selectPages(categories, settings) {
+  const buckets = constructBuckets(categories);
+  const selections = makeSelections(settings, buckets);
+  return selections;
+}
+
+function makeSelections(settings, buckets) {
+  const selections = [];
+  for (const setting of settings) {
+    const bucket = buckets[setting.category];
+    if (!bucket) {
+      throw new Error(`Invalid category: ${setting.category}`);
+    }
+    for (let i = 0; i < setting.count; i++) {
+      const randomNumber = Math.floor(Math.random() * Object.keys(bucket).length);
+      const page = Object.keys(bucket)[randomNumber];
+      const sections = bucket[page];
+      selections.push({category: setting.category, page, sections});
+    }
+  }
+  return selections;
+}
+
+function constructBuckets(categories) {
   const buckets = {};
   for (const category of categories) {
     if (!buckets[category.name]) {
@@ -27,7 +56,7 @@ function selectRecipes(categories, settings) {
       }
     }
   }
-  console.log(buckets);
+  return buckets;
 }
 
 function parseSettings() {
