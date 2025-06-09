@@ -1,5 +1,5 @@
 import fs from 'fs';
-import config from './config.json' assert { type: 'json' };
+import config from './config.json' with { type: 'json' };
 
 main().catch(console.error);
 

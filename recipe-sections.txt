@@ -51,7 +51,6 @@ Quick and Condensed Soups,109,110
 Green Salads,116,118
 Warm or Wilted Salads,118,118
 Coleslaw,119,120
-Bound Salads,123,124
 Vegetable Salads,125,129
 Bean Salads,129,130
 Grain and Rice Salads,130,132
@@ -142,6 +141,7 @@ Puff Pastry,692,697
 
 Main Dishes
 Combination Salads,120,123
+Bound Salads,123,124
 Cold Sandwiches,137,139
 Hot Sandwiches,139,141
 "Griddled, Pressed, and Broiled Sandwiches",141,143
